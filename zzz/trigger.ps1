@@ -2,7 +2,8 @@
 & iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/dependencies/rust.ps1" | iex
 & iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/dependencies/docker_desktop.ps1" | iex
 & iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/dependencies/hoyo_sdk.ps1" | iex
-& iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/dependencies/postgresql.ps1" | iex -ArgumentList "-container_name", "trigger-rs-postgres", "-user", "root", "-password", "root", "-db", "trigger-rs"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/dependencies/postgresql.ps1" -OutFile "postgresql.ps1"
+& .\postgresql.ps1 -container_name "trigger-rs-postgres" -user "root" -password "root" -db "trigger-rs"
 
 $folderPath = "zzz\trigger-rs"
 
