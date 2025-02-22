@@ -15,6 +15,7 @@ if (-Not $isPageReachable -and -Not $isFolderExist) {
     $installGit = Read-Host "Hoyo-SDK not found. Do you want to download it? (Y/N)"
     if ($installGit -match "^[Yy]") {
         git clone "https://git.xeondev.com/reversedrooms/hoyo-sdk"
+        Start-Process powershell -WindowStyle Minimized -ArgumentList "-NoExit", "-Command", "cd 'hoyo-sdk'; cargo run"
     } else {
         Write-Host "Hoyo-SDK download skipped."
     }
