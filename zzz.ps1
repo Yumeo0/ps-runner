@@ -1,6 +1,7 @@
 $choices = @(
-    "Trigger [1.6]",
-    "Evelyn  [1.5]"
+    "Trigger [1.6.0]",
+    "Evelyn  [1.5.0]",
+    "Yanagi  [1.4.2]",
 )
 
 $index = 0
@@ -32,4 +33,5 @@ while ($true) {
 switch ($index) {
     0 { iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/zzz/trigger.ps1" | iex }
     1 { iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/zzz/evelyn.ps1" | iex }
+    2 { iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/zzz/yanagi.ps1" | iex }
 }
