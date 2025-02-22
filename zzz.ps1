@@ -1,7 +1,7 @@
 $choices = @(
     "Trigger [1.6.0]",
     "Evelyn  [1.5.0]",
-    "Yanagi  [1.4.2]",
+    "Yanagi  [1.4.2]"
 )
 
 $index = 0
