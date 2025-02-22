@@ -1,5 +1,7 @@
 # 🚀 Private Server Runner
 
+This script automates the setup and management of private servers by downloading all necessary software (Rust, PostgreSQL, SurrealDB, etc.). It provides an easy selection menu for installing specific servers and ensures they stay updated to the latest version automatically. 🚀
+
 ## 📖 Table of Contents
 
 - [📌 Getting Started](#-getting-started)
