@@ -1,5 +1,3 @@
-Add-Type -AssemblyName System.Console
-
 & iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/dependencies/winget.ps1" | iex
 
 $choices = @(

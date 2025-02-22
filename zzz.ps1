@@ -1,5 +1,3 @@
-Add-Type -AssemblyName System.Console
-
 $choices = @(
     "Trigger [1.6]"
 )
