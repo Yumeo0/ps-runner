@@ -18,7 +18,7 @@ This script automates the setup and management of private servers by downloading
 2. Run the following command:
 
    ```powershell
-   iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/ps.ps1" | iex
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process; iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/ps.ps1" | iex
    ```
 
 ## 🌐 Currently available servers
