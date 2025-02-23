@@ -1,3 +1,5 @@
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process;
+
 $choices = @(
     "Zenless Zone Zero",
     "Wuthering Waves"
