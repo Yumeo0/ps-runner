@@ -22,11 +22,22 @@ This script automates the setup and management of private servers by downloading
 
 ## 🌐 Currently available servers
 
+### Status
+
+🟢 — Working  
+🟡 — Updating  
+🔴 — Broken  
+🔵 — Deprecated
+
 ### Zenless Zone Zero
 
-- **🔗 [Trigger](https://git.xeondev.com/ObolSquad/trigger-rs)** — `1.6.0`
-- **🔗 [Evelyn](https://git.xeondev.com/evelyn-rs/evelyn-rs)** — `1.5.0`
-- **🔗 [Yanagi](https://git.xeondev.com/HollowSpecialOperationsS6/YanagiZS)** — `1.4.2`
+- **🔗 [Trigger](https://git.xeondev.com/ObolSquad/trigger-rs)** — `1.6.0` 🟢
+- **🔗 [Evelyn](https://git.xeondev.com/evelyn-rs/evelyn-rs)** — `1.5.0` 🔵
+- **🔗 [Yanagi](https://git.xeondev.com/HollowSpecialOperationsS6/YanagiZS)** — `1.4.2` 🔵
+
+### Wuthering Waves
+
+- **🔗 [Wicked Waifus](https://git.xeondev.com/wickedwaifus/wicked-waifus-rs)** — `2.1.0` 🟡
 
 ## ❓ FAQ
 

@@ -25,6 +25,7 @@ if ($containerExists) {
         -e POSTGRES_USER=$user `
         -e POSTGRES_PASSWORD=$password `
         -e POSTGRES_DB=$db `
+        -e POSTGRES_HOST_AUTH_METHOD=trust `
         -p 5432:5432 `
         postgres:latest
     Write-Host "Container '$container_name' created successfully." -ForegroundColor Green

@@ -1,13 +1,12 @@
 $choices = @(
-    "Zenless Zone Zero",
-    "Wuthering Waves"
+    "Wicked Waifus [2.1.0] (Currently broken)"
 )
 
 $index = 0
 
 function Show-Menu {
     Clear-Host
-    Write-Host "Use arrow keys to select a game and press Enter:"
+    Write-Host "Server version:"
     for ($i = 0; $i -lt $choices.Length; $i++) {
         if ($i -eq $index) {
             Write-Host "> $($choices[$i])" -ForegroundColor Cyan
@@ -29,9 +28,6 @@ while ($true) {
     if ($key -eq 13) { break }  # Ensures loop exits on Enter key
 }
 
-Write-Host "Selected: $index"
-
 switch ($index) {
-    0 { iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/zzz.ps1" | iex }
-    1 { iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/wuwa.ps1" | iex }
+    0 { iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/wuwa/wicked_waifus.ps1" | iex }
 }
