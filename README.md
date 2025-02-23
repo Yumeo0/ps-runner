@@ -7,6 +7,7 @@ This script automates the setup and management of private servers by downloading
 - [📌 Getting Started](#-getting-started)
 - [🌐 Currently Available Servers](#-currently-available-servers)
   - [Zenless Zone Zero](#zenless-zone-zero)
+  - [Wuthering Waves](#wuthering-waves)
 - [❓ FAQ](#-faq)
   - [📂 Where will the files be stored after running the script?](#-where-will-the-files-be-stored-after-running-the-script)
   - [🔄 Will the script redownload existing files?](#-will-the-script-redownload-existing-files)
