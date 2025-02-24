@@ -3,6 +3,7 @@ if (-not $buildToolsCheck) {
     $installBuildTools = Read-Host "C++ Build Tools are not installed. Do you want to install them? (Y/N)"
     if ($installBuildTools -match "^[Yy]") {
         winget install --id Microsoft.VisualStudio.2022.BuildTools --override "--passive --wait --add Microsoft.VisualStudio.Component.VC.CoreBuildTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64"
+        Write-Host "C++ Build Tools were successfully installed. Restart your terminal to apply the changes." -ForegroundColor Yellow
     } else {
         Write-Host "C++ Build Tools installation skipped."
     }

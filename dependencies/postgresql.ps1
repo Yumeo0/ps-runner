@@ -20,7 +20,7 @@ if ($containerExists) {
     docker start $container_name
     Write-Host "Container '$container_name' started." -ForegroundColor Green
 } else {
-    Write-Host "Creating new container: $container_name" -ForegroundColor Yellow
+    Write-Host "Creating new container: $container_name" -ForegroundColor Green
     docker run -d --name $container_name `
         -e POSTGRES_USER=$user `
         -e POSTGRES_PASSWORD=$password `
