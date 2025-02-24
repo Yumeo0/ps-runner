@@ -1,6 +1,4 @@
-& iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/dependencies/git.ps1" | iex
-& iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/dependencies/rust.ps1" | iex
-& iwr -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/dependencies/docker_desktop.ps1" | iex
+& Invoke-WebRequest -useb "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/dependencies/common.ps1" | Invoke-Expression
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Yumeo0/ps-runner/refs/heads/main/dependencies/surrealdb.ps1" -OutFile "surrealdb.ps1"
 & .\surrealdb.ps1 -container_name "yanagi-zs-surrealdb" -user "root" -password "root" -db "yanagi"
 
