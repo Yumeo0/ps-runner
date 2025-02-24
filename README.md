@@ -14,7 +14,7 @@ This script automates the setup and management of private servers by downloading
 
 ## 📌 Getting Started
 
-1. Open **PowerShell** in the directory where you want your private servers to be stored.
+1. Open an **Administrator PowerShell** in the directory where you want your private servers to be stored.
 2. Run the following command:
 
    ```powershell
